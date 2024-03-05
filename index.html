@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>FCC Palindrome Checker</title>
-</head>
-<body>
-    
-</body>
-<script src="app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>NVoltagee FCC Palindrome Checker</title>
+  </head>
+  <body>
+    <main class="container">
+      <img
+        class="logo"
+        src="https://res.cloudinary.com/daki9bhap/image/upload/f_auto,q_auto/logo"
+        alt="NVoltagee logo"
+        loading="lazy"
+      />
+      <h1 class="title">Is it a Palindrome?</h1>
+      <div class="palindrome-definition-container">
+        <p class="palindrome-definition">
+          A palindrome is a word or sentence that's spelled the same way both
+          forward and backward, ignoring punctuation, case, and spacing.
+        </p>
+      </div>
+      <div class="palindrome-input-container">
+        <label for="textinput">Enter in text to check for a palindrome: </label>
+        <input class="palindrome-input" id="text-input" value type="text" />
+        <button class="palindrome-btn" id="check-btn">Check</button>
+        <div class="results hidden" id="result"></div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
 </html>
