@@ -11,8 +11,8 @@
 }
 
 :root {
-  --main-color: #F31C2B;
-  --text-color: #FFC743;
+  --main-color: #f31c2b;
+  --text-color: #FFC641;
   --bg-color: #000;
 }
 
@@ -38,25 +38,84 @@ h6 {
 
 p {
   text-wrap: pretty;
+  color: #FFF;
 }
 
 .container {
-    width: 100%;
-    min-height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
-    height: 100%;
-    margin-bottom: 20px;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 20px;
 }
 
 .title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.palindrome-definition-container {
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: var(--text-color);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palindrome-definition {
+    vertical-align: middle;
     text-align: center;
-    font-size: 2rem;
-    padding: 10px 0;
-    margin-bottom: 20px;
+}
+
+.palindrome-input-container {
+  width: min(100vw, 450px);
+  min-height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #FFF;
+  box-shadow: 0 6px 6px #f31c2b;
+}
+
+.palindrome-input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #f31c2b;
+}
+
+.palindrome-btn {
+  width: 90px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f31c2b;
+  color: #fff;
+  cursor: pointer;
+}
+
+label {
+  color: var(--text-color);
+  margin-bottom: 20px;
 }
