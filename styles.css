@@ -12,7 +12,7 @@
 
 :root {
   --main-color: #f31c2b;
-  --text-color: #FFC641;
+  --text-color: #ffc641;
   --bg-color: #000;
 }
 
@@ -38,7 +38,7 @@ h6 {
 
 p {
   text-wrap: pretty;
-  color: #FFF;
+  color: #fff;
 }
 
 .container {
@@ -64,21 +64,21 @@ p {
 }
 
 .palindrome-definition-container {
-    width: min(100vw, 450px);
-    font-size: 1.3rem;
-    min-height: 140px;
-    background-color: var(--text-color);
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: min(100vw, 450px);
+  font-size: 1.3rem;
+  min-height: 140px;
+  background-color: var(--text-color);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .palindrome-definition {
-    vertical-align: middle;
-    text-align: center;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .palindrome-input-container {
@@ -91,7 +91,7 @@ p {
   flex-wrap: wrap;
   padding: 20px;
   margin: 10px 0;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0 6px 6px #f31c2b;
 }
 
