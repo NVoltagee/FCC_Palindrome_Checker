@@ -119,3 +119,14 @@ label {
   color: var(--text-color);
   margin-bottom: 20px;
 }
+
+.results {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
