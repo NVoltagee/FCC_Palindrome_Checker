@@ -1,19 +1,15 @@
-const textInput = document.getElementById("text-input");
-const checkBtn = document.getElementById("check-btn");
+const input = document.getElementById("text-input");
+const button = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
-const checkPalindrome = () => {
-  const text = textInput.value.toLowerCase().replace(/[^a-z0-9]/gi, "");
-
-  result.textContent = ""; // Clear the result paragraph
-
-  if (text.trim() === "") {
+const checkPalindrome = (input) => {
+  const initialInput = input;
+  if (input === "") {
     alert("Please input a value");
-    return; // Exit the function if no input
-  } else {
-    // Palindrome checking logic here...
-
-    // Update the result paragraph
-    result.textContent = "Please enter a value to check.";
+    return;
   }
 };
+
+button.addEventListener("click", () => {
+  checkPalindrome(input.value);
+});
