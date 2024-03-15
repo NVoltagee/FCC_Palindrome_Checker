@@ -12,7 +12,7 @@ const checkPalindrome = (input) => {
   // Remove the previous result
   result.replaceChildren();
 
-  const lowercaseInput = input.toLowerCase();
+  const lowercaseInput = input.replace(/[^A-Za-z0-9]/gi, "").toLowerCase();
 
   const reversedInput = lowercaseInput.split("").reverse().join("");
 
@@ -29,4 +29,12 @@ const checkPalindrome = (input) => {
 
 button.addEventListener("click", () => {
   checkPalindrome(input.value);
+});
+
+// Press 'enter' key to show results
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkPalindrome(input.value);
+    input.value = "";
+  }
 });
